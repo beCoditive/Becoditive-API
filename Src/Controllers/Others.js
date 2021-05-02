@@ -10,7 +10,7 @@ function randomStr(length) {
 
 exports.joke = async(req, res, next) => {
     try{
-        const data = require('../data/joke.json')
+        const data = require('../Data/Joke.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             joke : randomData.joke,
@@ -25,7 +25,7 @@ exports.joke = async(req, res, next) => {
 
 exports.insults = async(req, res, next) => {
     try{
-        const data = require('../data/insults.json')
+        const data = require('../Data/insults.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             insult : randomData.insult,
@@ -39,7 +39,7 @@ exports.insults = async(req, res, next) => {
 
 exports.truth = async(req, res, next) => {
     try{
-        const data = require('../data/Truth.json')
+        const data = require('../Data/Truth.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             truth : randomData.truth,   
@@ -53,7 +53,7 @@ exports.truth = async(req, res, next) => {
 
 exports.dare = async(req, res, next) => {
     try{
-        const data = require('../data/Dare.json')
+        const data = require('../Data/Dare.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             dare : randomData.dare,   
@@ -67,7 +67,7 @@ exports.dare = async(req, res, next) => {
 
 exports.quotes = async(req, res, next) => {
     try{
-        const data = require('../data/quote.json')
+        const data = require('../Data/Quote.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             quote : randomData.quote,
@@ -83,7 +83,7 @@ exports.quotes = async(req, res, next) => {
 
 exports.uselessweb = async(req, res, next) => {
     try{
-        const data = require('../data/uselessweb.json')
+        const data = require('../Data/Uselessweb.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
             url : randomData.url
