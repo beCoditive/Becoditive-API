@@ -33,7 +33,7 @@ app.use('/v1/meme' , memeRouter)
 app.use('/v1/images' , imageRouter)
 
 app.use('*' , async(req, res, next) => {
-    res.render('404')
+    res.status(404).render('404')
 })
 
 
