@@ -3,7 +3,7 @@ const canvas = require('canvas')
 
 exports.delete = async(req, res, next) => {
     try{
-        const bg = await canvas.loadImage("https://max2408.github.io/becoditive-cdn/assets/api/delete.png")
+        const bg = await canvas.loadImage("https://cdn.becoditive.xyz/assets/api/delete.png")
 
         if(!req.query.image){
             res.status(400).json({
@@ -55,7 +55,7 @@ exports.delete = async(req, res, next) => {
 
 exports.ad = async(req, res, next) => {
     try{
-        const bg = await canvas.loadImage('https://max2408.github.io/becoditive-cdn/assets/api/ad.png')
+        const bg = await canvas.loadImage('https://cdn.becoditive.xyz/assets/api/ad.png')
 
         if(!req.query.image){
             res.status(400).json({
