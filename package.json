@@ -1,11 +1,10 @@
 {
-  "name": "max-api",
+  "name": "becoditive-api",
   "version": "1.0.0",
-  "description": "max api",
+  "description": "The official API of beCoditive with many endpoints like memes, animals, image manipulation, etc.",
   "main": "./server.js",
   "scripts": {
-    "start": "nodemon ./server.js",
-    "test": "node ./Test/api.test.js"
+    "start": "nodemon ./server.js"
   },
   "author": "beCoditive",
   "license": "ISC",
