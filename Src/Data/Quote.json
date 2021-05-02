@@ -1,0 +1,57 @@
+[
+    {
+        "quote": "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
+        "type" : "programming",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Without requirements or design, programming is the art of adding bugs to an empty text file. ",
+        "type" : "programming",
+        "author": "Louis Srygley"
+    },
+    {
+        "quote": "Before software can be reusable it first has to be usable.",
+        "type" : "programming",
+        "author": "Ralph Johnson"
+    },
+    {
+        "quote": "The best method for accelerating a computer is the one that boosts it by 9.8 m/s2.",
+        "type" : "programming",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.",
+        "type" : "programming",
+        "author": "Oktal"
+    },
+    {
+        "quote": "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.",
+        "type" : "programming",
+        "author": "Gerald Weinberg"
+    },
+    {
+        "quote": "There are two ways to write error-free programs; only the third one works",
+        "type" : "programming",
+        "author": "Alan J. Perlis"
+    },
+    {
+        "quote": "Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development.",
+        "type" : "programming",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "It’s not a bug – it’s an undocumented feature.",
+        "type" : "programming",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "One man’s crappy software is another man’s full-time job.",
+        "type" : "programming",
+        "author": "Jessica Gaston"
+    },
+    {
+        "quote": "A good programmer is someone who always looks both ways before crossing a one-way street.",
+        "type" : "programming",
+        "author": "Doug Linder"
+    }
+]

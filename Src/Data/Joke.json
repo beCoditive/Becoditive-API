@@ -1,0 +1,22 @@
+[
+    {
+        "joke" : "A DHCP packet walks into a bar and asks for a beer.. Bartender says, \"here, but I’ll need that back in an hour!\"",
+        "type" : "programming"
+    },
+    {
+        "joke" : "Me: Will you be my Valentine?\nGirl: No way\nMe: sudo will you be my Valentine?\nGirl: Yes..yes..yes! Let’s go!",
+        "type" : "programming"
+    },
+    {
+        "joke" : "Girl: Do you drink?\nProgrammer: No.\nGirl: Have Girlfriend?\nProgrammer: No.\nGirl: Then how do you enjoy life?\nProgrammer: I am Programmer",
+        "type" : "programming"
+    },
+    {
+        "joke" : "A Programmer was walking out of door for work, his wife said “while you’re out, buy some milk” and he never came home.",
+        "type" : "programming"
+    },
+    {
+        "joke" : "Boss: What is your address?\nMe: 173.168.15.10\n\nBoss: No, your local address\nMe: 127.0.01\n\nBoss: I mean your physical address\nMe: 29:01:38:62:31:58",
+        "type" : "programming"
+    }
+]
