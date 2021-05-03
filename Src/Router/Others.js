@@ -12,6 +12,10 @@ route
     .get(otherController.insults)
 
 route
+    .route('/firt')
+    .get(otherController.firt)
+
+route
     .route('/quote')
     .get(otherController.quotes)
 

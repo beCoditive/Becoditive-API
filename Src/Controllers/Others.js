@@ -37,6 +37,20 @@ exports.insults = async(req, res, next) => {
     }
 }
 
+exports.firt = async(req, res, next) => {
+    try{
+        const data = require('../Data/Files/firt.json')
+        let randomData = data[Math.floor(Math.random() * data.length)]
+        res.status(200).json({
+            "firt-text" : randomData.firt,
+        })
+    }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}
+
 exports.truth = async(req, res, next) => {
     try{
         const data = require('../Data/Truth.json')
