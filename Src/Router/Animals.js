@@ -15,5 +15,8 @@ route
     .route('/panda')
     .get(animalController.panda)
 
+route
+    .route('/bird')
+    .get(animalController.bird)
 
 module.exports = route;
