@@ -7,7 +7,7 @@
     "start": "nodemon ./server.js"
   },
   "author": "beCoditive",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "canvas": "^2.7.0",
     "canvas-constructor": "^4.1.0",
