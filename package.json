@@ -17,6 +17,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
+    "mongoose": "^5.12.7",
     "phin": "^3.5.1",
     "swig": "^1.4.2"
   },

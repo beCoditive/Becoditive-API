@@ -12,8 +12,16 @@ route
     .get(otherController.insults)
 
 route
-    .route('/firt')
-    .get(otherController.firt)
+    .route('/flirt')
+    .get(otherController.flirt)
+
+route
+    .route('/word')
+    .get(otherController.word)
+
+route
+    .route('/doesnotexists')
+    .get(otherController.doesnotexists)
 
 route
     .route('/quote')

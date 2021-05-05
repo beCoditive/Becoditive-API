@@ -1,3 +1,6 @@
+const canvas = require('canvas')
+const { Canvas } = require('canvas-constructor')
+
 function randomStr(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -37,7 +40,7 @@ exports.insults = async(req, res, next) => {
     }
 }
 
-exports.firt = async(req, res, next) => {
+exports.flirt = async(req, res, next) => {
     try{
         const data = require('../Data/Files/firt.json')
         let randomData = data[Math.floor(Math.random() * data.length)]
@@ -45,6 +48,41 @@ exports.firt = async(req, res, next) => {
             "firt-text" : randomData.firt,
         })
     }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}
+
+exports.word = async(req, res, next) => {
+    try{
+        const data = require('../Data/words').arr
+        let randomData = data[Math.floor(Math.random() * data.length)]
+        res.status(200).json({
+            "word" : randomData,
+        })
+    }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}
+
+exports.doesnotexists = async(req, res, next) => {
+    try{
+        let randomNumber = Math.floor(Math.random() * 30) + 1
+        const url = `https://cdn.becoditive.xyz/doesnotexists/doesnotexist-${randomNumber}.png`
+        
+        let img = await canvas.loadImage(url)
+
+        let image = new Canvas(1200 , 1200)
+        .printImage(img , 0 , 0 ,1200 , 1200)
+        .toBuffer()
+
+        res.set({'Content-Type': 'image/png'})
+        res.status(200).send(image)
+    }catch(error){
+        console.log(error)
         res.status(500).json({
             "error": error
         })

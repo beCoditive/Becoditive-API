@@ -20,6 +20,10 @@ route
     .get(imageController.jail)
 
 route 
+    .route('/wanted')
+    .get(imageController.wanted)
+
+route 
     .route('/gay')
     .get(imageController.gay)
 

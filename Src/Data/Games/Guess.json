@@ -1,0 +1,70 @@
+[
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/apple.png",
+        "answer" : ["apple"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/facebook.jpg",
+        "answer" : ["facebook" , "fb"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/honda.png",
+        "answer" : ["honda"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/instagram.png",
+        "answer" : ["insta" , "instagram"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/lg.jpg",
+        "answer" : ["lg"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/mcdonalds.png",
+        "answer" : ["mcdonalds"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/mercedes.png",
+        "answer" : ["mercedes" , "mercedes benz", "mercedes-benz"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/shell.jpg",
+        "answer" : ["shell"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/spotify.png",
+        "answer" : ["spotify"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/starbucks.jpg",
+        "answer" : ["starbucks" , "starbuck"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/twitter.jpg",
+        "answer" : ["twitter"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/whatsapp.png",
+        "answer" : ["whatsapp"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/discord.png",
+        "answer" : ["discord" , "dc"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/zoom.png",
+        "answer" : ["zoom"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/vc%20code.png",
+        "answer" : ["vsc" , "visual studio code" , "visual-studio-code" , "vs code" , "vs-code" , "vscode"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/microsoft%20teams.png",
+        "answer" : ["microsoft teams" , "microsoft-teams" , "teams" , "ms-teams" , "ms teams"]
+    },
+    {
+        "logo" : "https://cdn.becoditive.xyz/logos/atom.png",
+        "answer" : ["atom"]
+    }
+]

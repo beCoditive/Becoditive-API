@@ -255,6 +255,56 @@ exports.gay = async(req, res, next) => {
     }
 }
 
+exports.wanted = async(req, res, next) => {
+    try {
+
+        let bg = await canvas.loadImage("https://cdn.becoditive.xyz/assets/api/wanted.jpg")
+
+        if(!req.query.image){
+            res.status(400).json({
+                "error" : true,
+                "code": 400,
+                "message": "no image was provide."
+            })
+            return next();
+        }
+
+        if(req.query.image.endsWith('.png') === true){
+            let logo = await canvas.loadImage(req.query.image)
+
+            let image = new Canvas(626, 876)
+            .printImage(bg , 0 , 0 ,626 , 876)
+            .printImage(logo , 194 , 295 , 235 , 235)
+            .toBuffer();
+    
+            res.set({'Content-Type': 'image/png'})
+            res.send(image)
+        }else if(req.query.image.endsWith('.jpg') === true){
+            let logo = await canvas.loadImage(req.query.image)
+
+            let image = new Canvas(626, 876)
+            .printImage(bg , 0 , 0 ,626 , 876)
+            .printImage(logo , 194 , 295 , 235 , 235)
+            .toBuffer();
+    
+            res.set({'Content-Type': 'image/png'})
+            res.send(image)
+        }else{
+            res.status(400).json({
+                "error" : true,
+                "code": 400,
+                "message": "only jpg or png type of images are allowed."
+            })
+            return next();
+        }
+    }catch(error){
+        console.log(error)
+        res.status(500).json({
+            "error": error
+        })
+    }
+}
+
 exports.bluediscord = async(req, res, next) => {
     try {
 
@@ -304,3 +354,4 @@ exports.bluediscord = async(req, res, next) => {
         })
     }
 }
+
