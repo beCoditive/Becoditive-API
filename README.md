@@ -23,3 +23,4 @@ you can change all the files and use it for your projects also.
 But you have to give credits to `beCoditive`.
 
 > Made By beCoditive ©2021
+> Front End Made by [Aditya Jha](https://github.com/AdityaXJha)
