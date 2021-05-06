@@ -7,4 +7,8 @@ route
     .route('/guessthelogo')
     .get(gamesController.guess)
 
+route
+    .route('/trivia')
+    .get(gamesController.trivia)
+
 module.exports = route;

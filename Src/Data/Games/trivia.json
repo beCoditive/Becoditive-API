@@ -1,0 +1,218 @@
+[
+    {
+        "question": "What is the largest organ of the human body?",
+        "category": "General Knowledge",
+        "options": ["Heart" , "large Intestine" , "Liver" , "Skin"],
+        "answer" : "Skin",
+        "difficulty" : "easy",
+        "correct_option": 4
+    },
+    {
+        "question": "In which city did American rap producer DJ Khaled originate from?",
+        "category": "Entertainment: Music",
+        "options": ["New York" , "Miami" , "Detroit" , "Atlanta"],
+        "answer" : "Miami",
+        "difficulty" : "medium",
+        "correct_option": 2
+    },
+    {
+        "question": "Who played the female lead in the 1933 film King Kong?",
+        "category": "Entertainment: Film",
+        "options": ["Vivien Leigh" , "Jean Harlow" , "Fay Wray" , "Mae West"],
+        "answer" : "Fay Wray",
+        "difficulty" : "easy",
+        "correct_option": 3
+    },
+    {
+        "question": "Which of these is NOT a main playable character in Grand Theft Auto V?",
+        "category": "Entertainment: Video Games",
+        "options": ["Trevor" , "Michael" , "Franklin" , "Lamar"],
+        "answer" : "Lamar",
+        "difficulty" : "easy",
+        "correct_option": 4
+    },
+    {
+        "question": "In the TV show Mad Men, what was Donald Draper's birthname?",
+        "category": "Entertainment: Television",
+        "options": ["Donald Draper" , "Richard Dick Whitman" , "John Ashbury" , "Michael Mikey Wilhelm"],
+        "answer" : "Richard Dick Whitman",
+        "difficulty" : "easy",
+        "correct_option": 2
+    },
+    {
+        "question": "Who was the Author of the manga Uzumaki?",
+        "category": "Entertainment: Japanese Anime & Manga",
+        "options": ["Junji Ito" , "tNoboru Takahashi" , "Akira Toriyama" , "Masashi Kishimoto"],
+        "answer" : "Junji Ito",
+        "difficulty" : "hard",
+        "correct_option": 1
+    },
+    {
+        "question": "When was the Garfield comic first published?",
+        "category": "Entertainment: Comics",
+        "options": ["1982" , "1978" , "1973" , "1988"],
+        "answer" : "1978",
+        "difficulty" : "hard",
+        "correct_option": 2
+    },
+    {
+        "question": "Who is Sonic's sidekick?",
+        "category": "Entertainment: Video Games",
+        "options": ["Tails" , "Shadow" , "Amy" , "Knuckles"],
+        "answer" : "Tails",
+        "difficulty" : "easy",
+        "correct_option": 1
+    },
+    {
+        "question": "In JoJo's Bizarre Adventure, Father Enrico Pucchi uses a total of 3 stands in Part 6: Stone Ocean.",
+        "category": "Entertainment: Japanese Anime & Manga",
+        "options": ["True" , "False"],
+        "answer" : "True",
+        "difficulty" : "medium",
+        "correct_option": 1
+    },
+    {
+        "question": "Who is the main character of the game Half-Life: Opposing Force?",
+        "category": "Entertainment: Video Games",
+        "options": ["Gordon Freeman" , "Alyx Vance" , "Barney Calhoun" , "Adrian Shephard"],
+        "answer" : "Adrian Shephard",
+        "difficulty" : "easy",
+        "correct_option": 4
+    },
+    {
+        "question": "Which King of England was faced with the Peasants Revolt in 1381?",
+        "category": "History",
+        "options": ["Edward III" , "Edward II" , "Richard II" , "Henry IV"],
+        "answer" : "Richard II",
+        "difficulty" : "medium",
+        "correct_option": 3
+    },
+    {
+        "question": "The Maori hold that which island nation was founded by Kupe, who discovered it under a long white cloud?",
+        "category": "Mythology",
+        "options": ["Vanuatu" , "New Zealand" , "Fiji" , "Hawaii"],
+        "answer" : "New Zealand",
+        "difficulty" : "medium",
+        "correct_option": 2
+    },
+    {
+        "question": "Who won the 2016 Formula 1 World Driver's Championship?",
+        "category": "Sports",
+        "options": ["Nico Rosberg" , "Lewis Hamilton" , "Max Verstappen" , "Kimi Raikkonen"],
+        "answer" : "Nico Rosberg",
+        "difficulty" : "easy",
+        "correct_option": 1
+    },
+    {
+        "question": "The walls of the Goldenrod City Gym in Pokemon Gold and Silver are arranged in the shape of which Pokemon?",
+        "category": "Entertainment: Video Games",
+        "options": ["Pikachu" , "Bulbasaur" , "Clefairy" , "Pidgey"],
+        "answer" : "Clefairy",
+        "difficulty" : "medium",
+        "correct_option": 3
+    },
+    {
+        "question": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+        "category": "Entertainment: Music",
+        "options": ["Method Man" , "Inspectah Deck" , "Masta Killa" , "GZA"],
+        "answer" : "Masta Killa",
+        "difficulty" : "hard",
+        "correct_option": 3
+    },
+    {
+        "question": "Tennis was once known as Racquetball.",
+        "category": "Sports",
+        "options": ["True" , "False" ],
+        "answer" : "False",
+        "difficulty" : "medium",
+        "correct_option": 2
+    },
+    {
+        "question": "Which of the following games has the most playable characters?",
+        "category": "Entertainment: Video Games",
+        "options": ["Mortal Kombat: Armageddon" , "Marvel Vs. Capcom 2" , "Timesplitters: Future Perfect" , "Dragon Ball Z: Budokai Tenkaichi 3"],
+        "answer" : "Timesplitters: Future Perfect",
+        "difficulty" : "medium",
+        "correct_option": 3
+    },
+    {
+        "question": "The ancient Roman god of war was commonly known as which of the following?",
+        "category": "Mythology",
+        "options": ["Mars" , "Jupiter" , "Juno" , "Ares"],
+        "answer" : "Mars",
+        "difficulty" : "easy",
+        "correct_option": 1
+    },
+    {
+        "question": "Which member of the English band The xx released their solo album In Colour; in 2015?",
+        "category": "Entertainment: Music",
+        "options": ["Baria Qureshi" , "Romy Madley Croft" , "Oliver Sim" , "Jamie xx"],
+        "answer" : "Jamie xx",
+        "difficulty" : "hard",
+        "correct_option": 4
+    },
+    {
+        "question": "Which JoJo's Bizarre Adventure character possesses the Stand named Silver Chariot?",
+        "category": "Entertainment: Japanese Anime & Manga",
+        "options": ["Noriaki Kakyoin" , "Jean Pierre Polnareff" , "Hermes Costello" , "Hol Horse"],
+        "answer" : "Jean Pierre Polnareff",
+        "difficulty" : "medium",
+        "correct_option": 2
+    },
+    {
+        "question": "In Call Of Duty: Zombies, what is the name of the Pack-A-Punched Crossbow?",
+        "category": "Entertainment: Video Games",
+        "options": ["Longinus" , "V-R11" , "Awful Lawton" , "Predator"],
+        "answer" : "Awful Lawton",
+        "difficulty" : "easy",
+        "correct_option": 3
+    },
+    {
+        "question": "Which of these countries is located the FURTHEST away from the South China Sea?",
+        "category": "Geography",
+        "options": ["Bangladesh" , "Malaysia" , "Vietnam" , "P1028100613"],
+        "answer" : "Bangladesh",
+        "difficulty" : "medium",
+        "correct_option": 1
+    },
+    {
+        "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 Need You?",
+        "category": "Entertainment: Music",
+        "options": ["LOUDPVCK" , "KRNE" , "NGHTMRE" , "DVBBS"],
+        "answer" : "NGHTMRE",
+        "difficulty" : "medium",
+        "correct_option": 3
+    },
+    {
+        "question": "Which Van Gogh painting depicts the view from his asylum in Saint-Remy-de-Provence in southern France?",
+        "category": "Art",
+        "options": ["The Church at Auvers" , "The Starry Night" , "Wheatfields with Crows" , "The Sower with Setting Sun"],
+        "answer" : "The Starry Night",
+        "difficulty" : "easy",
+        "correct_option": 2
+    },
+    {
+        "question": "Who is the English voice actor for Sora from the Kingdom Hearts series?",
+        "category": "Entertainment: Video Games",
+        "options": ["Uchiyama" , "Miyu Irino" , "Haley Joel Osment" , "Jesse McCartney"],
+        "answer" : "Haley Joel Osment",
+        "difficulty" : "medium",
+        "correct_option": 3
+    },
+    {
+        "question": "Which of the following was not developed by Bethesda?",
+        "category": "Entertainment: Video Games",
+        "options": ["Fallout 3" , "The Elder Scrolls V: Skyrim" , "Fallout 4" , "Fallout: New Vegas"],
+        "answer" : "Fallout: New Vegas",
+        "difficulty" : "medium",
+        "correct_option": 4
+    },
+    {
+        "question": "What is the alter-ego of the DC comics character Superman?",
+        "category": "Entertainment: Comics",
+        "options": ["Arthur Curry" , "Clark Kent" , "Bruce Wayne" , "John Jones"],
+        "answer" : "Clark Kent",
+        "difficulty" : "easy",
+        "correct_option": 2
+    }
+]

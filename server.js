@@ -23,6 +23,8 @@ app.engine('html', cons.swig)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
+app.use('/assets', express.static('assets'))
+
 app.use('/' , viewRouter)
 
 app.use('/v1/animals' , animalRouter)
