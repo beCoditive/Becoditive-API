@@ -9,8 +9,8 @@ Mostly the temp mail service will be blocked, but if someone else doesn't follow
 - [List of Blocked Domains](./blocked/blockeddomains.md) 
 
 ## Nodejs Module
-If you are using nodejs and want to use our api it will be more easier to use it by your [Npm Package](https://www.npmjs.com/package/becoditive).<br>
-We suggest not to use any other npm package for it until it is not offically annouced as your api key might be stole if you use some unknown package.
+If you are using nodejs and want to use our api it will be more easier to use it by your [NPM Package](https://www.npmjs.com/package/becoditive).<br>
+We suggest not to use any other npm package for it until it is not offically annouced as your api key might be stolen if you use some unknown package.
 
 ## How To Clone this Project It
 First download the zip or clone it using ``git clone https://github.com/beCoditive/Becoditive-API.git``
