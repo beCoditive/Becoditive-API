@@ -27,7 +27,7 @@ And to Run the API -
 npm start
 ```
 
-- Then the api will run on `http://localhost:4000`
+- Then the api will run on `http://localhost:5555`
 
 To edit and host online you can use replit. 
 This Project already has a .replit file configured!
