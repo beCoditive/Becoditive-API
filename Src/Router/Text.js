@@ -1,23 +1,27 @@
 const express = require('express')
 const route = express.Router()
+const auth = require('../Controllers/auth').auth
 
 const textController = require('../Controllers/Text')
 
 route
     .route('/reverse')
-    .get(textController.reverse)
+    .get(auth , textController.reverse)
 
-  
 route
     .route('/binary')
-    .get(textController.binary)
+    .get(auth ,textController.binary)
+
+route
+    .route('/morse')
+    .get(auth ,textController.morse)
 
 route
     .route('/sarcastic')
-    .get(textController.sarcastic)
+    .get(auth ,textController.sarcastic)
     
 route
     .route('/shuffle')
-    .get(textController.shuffle)
+    .get(auth ,textController.shuffle)
 
 module.exports = route;

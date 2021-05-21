@@ -31,4 +31,28 @@ route
     .route('/discordblue')
     .get(imageController.bluediscord)
 
+route 
+    .route('/rip')
+    .get(imageController.rip)
+
+route 
+    .route('/sepia')
+    .get(imageController.speia)
+
+route 
+    .route('/firsttime')
+    .get(imageController.firsttime)
+
+route 
+    .route('/jokeoverhead')
+    .get(imageController.jokeoverhead)
+
+route 
+    .route('/kimborder')
+    .get(imageController.kimborder)
+
+route 
+    .route('/captcha')
+    .get(imageController.captcha)
+
 module.exports = route;

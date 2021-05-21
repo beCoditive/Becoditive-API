@@ -1,23 +1,23 @@
 const express = require('express')
 const route = express.Router()
+const auth = require('../Controllers/auth').auth
 
 const memeController = require('../Controllers/Meme')
 
 route
-    .route('/meirl')
-    .get(memeController.meirl)
-
-route
-    .route('/minion')
-    .get(memeController.minion)
-
-route
-    .route('/dank')
-    .get(memeController.dank)
-
-route
     .route('/')
-    .get(memeController.allmeme)
+    .get(auth , memeController.memes)
 
+route
+    .route('/meirl')
+    .get(auth , memeController.meirl)
+
+route
+    .route('/discordmemes')
+    .get(auth , memeController.dcmemes)
+
+route
+    .route('/blacktwitter')
+    .get(auth , memeController.blactwitter)
 
 module.exports = route;

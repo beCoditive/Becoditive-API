@@ -1,50 +1,72 @@
 const express = require('express')
 const route = express.Router()
+const auth = require('../Controllers/auth').auth
 
 const otherController = require('../Controllers/Others')
 
 route
     .route('/joke')
-    .get(otherController.joke)
+    .get(auth , otherController.joke)
+
+route
+    .route('/puns')
+    .get(auth, otherController.puns)
+
 
 route
     .route('/insults')
-    .get(otherController.insults)
+    .get(auth , otherController.insults)
 
 route
     .route('/flirt')
-    .get(otherController.flirt)
+    .get(auth , otherController.flirt)
 
 route
     .route('/word')
-    .get(otherController.word)
+    .get(auth , otherController.word)
 
 route
     .route('/doesnotexists')
-    .get(otherController.doesnotexists)
+    .get(auth , otherController.doesnotexists)
 
 route
     .route('/quote')
-    .get(otherController.quotes)
+    .get(auth , otherController.quotes)
 
 route
     .route('/uselessweb')
-    .get(otherController.uselessweb)
+    .get(auth , otherController.uselessweb)
+
+route
+    .route('/letsnotmeet')
+    .get(auth , otherController.letsnotmeet)
 
 route
     .route('/truth')
-    .get(otherController.truth)
+    .get(auth , otherController.truth)
 
 route
     .route('/dare')
-    .get(otherController.dare)    
+    .get(auth , otherController.dare)    
 
 route
     .route('/number')
-    .get(otherController.number)
+    .get(auth , otherController.number)
+
+route
+    .route('/uuid')
+    .get(auth , otherController.uuid)
 
 route
     .route('/password')
-    .get(otherController.password)
+    .get(auth , otherController.password)
+
+route
+    .route('/hug')
+    .get(auth , otherController.hug)
+
+route
+    .route('/kiss')
+    .get(auth , otherController.kiss)
 
 module.exports = route;

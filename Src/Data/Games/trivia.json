@@ -64,14 +64,6 @@
         "correct_option": 1
     },
     {
-        "question": "In JoJo's Bizarre Adventure, Father Enrico Pucchi uses a total of 3 stands in Part 6: Stone Ocean.",
-        "category": "Entertainment: Japanese Anime & Manga",
-        "options": ["True" , "False"],
-        "answer" : "True",
-        "difficulty" : "medium",
-        "correct_option": 1
-    },
-    {
         "question": "Who is the main character of the game Half-Life: Opposing Force?",
         "category": "Entertainment: Video Games",
         "options": ["Gordon Freeman" , "Alyx Vance" , "Barney Calhoun" , "Adrian Shephard"],
@@ -118,14 +110,6 @@
         "answer" : "Masta Killa",
         "difficulty" : "hard",
         "correct_option": 3
-    },
-    {
-        "question": "Tennis was once known as Racquetball.",
-        "category": "Sports",
-        "options": ["True" , "False" ],
-        "answer" : "False",
-        "difficulty" : "medium",
-        "correct_option": 2
     },
     {
         "question": "Which of the following games has the most playable characters?",

@@ -1,6 +1,6 @@
 {
   "name": "becoditive-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The official API of beCoditive with many endpoints like memes, animals, image manipulation, etc.",
   "main": "./server.js",
   "scripts": {
@@ -9,17 +9,23 @@
   "author": "beCoditive",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "canvas": "^2.7.0",
     "canvas-constructor": "^4.1.0",
     "consolidate": "^0.16.0",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
+    "gifencoder": "^2.0.1",
+    "jimp": "^0.16.1",
     "mongoose": "^5.12.7",
-    "phin": "^3.5.1",
-    "swig": "^1.4.2"
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.0",
+    "nodemailer-sendinblue-transport": "^1.2.3",
+    "swig": "^1.4.2",
+    "webshot-node": "^0.18.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

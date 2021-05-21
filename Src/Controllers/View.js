@@ -1,7 +1,7 @@
 exports.home = async(req, res, next) => {
     try{
        
-        res.status(200).render('main')
+        res.status(200).render('main' ,  {message : "none" , token : process.env.ADMINSECRET})
         
     }catch(error){
         res.status(500).json({
@@ -10,3 +10,13 @@ exports.home = async(req, res, next) => {
     }
 }
 
+exports.v2 = async(req, res, next) => {
+    try{
+        res.status(200).render('vtwo')
+        
+    }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}

@@ -7,6 +7,7 @@
     --secondary-text-color: #dcdcdc;
 }
 
+
 /* scroll bar */
 
 ::-webkit-scrollbar {
@@ -20,6 +21,85 @@
 ::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
+
+.Signup {
+    margin-top: 150px;
+  }
+  .Signup__text {
+    text-align: center;
+    margin: 0 auto 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d6d6d;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 90%;
+  }
+  .Signup__form {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 540px) {
+    .Signup__form {
+      display: block;
+    }
+  }
+  input {
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+    color: #6d6d6d;
+    transition: border 0.3s, box-shadow 0.3s;
+    width: 90%;
+    max-width: 300px;
+  }
+  @media (max-width: 540px) {
+    input {
+      display: block;
+      margin: 0 auto 25px;
+    }
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid #db4646;
+    box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  }
+  .Signup__button {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+  }
+  .Signup__button{
+    padding : 0 40px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  @media (max-width: 540px) {
+    .Signup__button {
+      display: block;
+      margin: 0 auto 50px;
+      padding: 15px 40px;
+    }
+  }
+  .Signup__button:hover {
+    background: var(--main-color);
+    border-color: var(--main-color);
+  }
+  .Signup__button:active {
+    cursor: pointer;
+    background: var(--main-color);
+    border-color: var(--main-color);
+  }
+  .Signup__button:focus {
+    outline: none;
+  }
+  
 
 .footer-dark {
     padding: 50px 0;
@@ -41,7 +121,7 @@
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 1px var(--main-color);
     margin: 0 8px;
     color: #fff;
     opacity: 0.75;
