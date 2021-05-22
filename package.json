@@ -4,7 +4,8 @@
   "description": "The official API of beCoditive with many endpoints like memes, animals, image manipulation, etc.",
   "main": "./server.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./server.js",
+    "loadsampledata": "node ./loadsampledata.js"
   },
   "author": "beCoditive",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "body-parser": "^1.19.0",
     "canvas": "^2.7.0",
     "canvas-constructor": "^4.1.0",
+    "colors": "^1.4.0",
     "consolidate": "^0.16.0",
     "cors": "^2.8.5",
     "dotenv": "^8.6.0",

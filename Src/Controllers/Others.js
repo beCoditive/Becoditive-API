@@ -4,7 +4,6 @@ const Jokes = require('../../models/jokes')
 const Insults = require('../../models/insults')
 const Flirts = require('../../models/flirt')
 const Uselessweb = require('../../models/Uselessweb')
-const stories = require('../../models/letsnotmeet')
 
 function randomStr(length) {
     var result           = '';
@@ -54,23 +53,6 @@ exports.joke = async(req, res, next) => {
         res.status(200).json({
             joke : randomData.joke,
             category: randomData.category
-        })
-    }catch(error){
-        res.status(500).json({
-            "error": error
-        })
-    }
-}
-
-exports.letsnotmeet = async(req, res, next) => {
-    try{
-        let data = await stories.find()
-        let randomData = data[Math.floor(Math.random() * data.length)]
-        res.status(200).json({
-            title : randomData.title,
-            story: randomData.story,
-            author : randomData.author,
-            url : randomData.url
         })
     }catch(error){
         res.status(500).json({

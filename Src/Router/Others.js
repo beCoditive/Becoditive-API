@@ -38,10 +38,6 @@ route
     .get(auth , otherController.uselessweb)
 
 route
-    .route('/letsnotmeet')
-    .get(auth , otherController.letsnotmeet)
-
-route
     .route('/truth')
     .get(auth , otherController.truth)
 

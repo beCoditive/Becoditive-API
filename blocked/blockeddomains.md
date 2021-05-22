@@ -3,6 +3,7 @@
 - `suckless.cc`
 - `14kmail.me`
 - `0iq.in`
+- `aakash.co.in`
 
 > If your domain is included in this list means we have banned its use in your api. This usally happens because your domain is just in some temp mail service or if many email address are used with your domain in generating api key.
 

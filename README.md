@@ -12,7 +12,7 @@ Mostly the temp mail service will be blocked, but if someone else doesn't follow
 If you are using nodejs and want to use our api it will be more easier to use it by your [NPM Package](https://www.npmjs.com/package/becoditive).<br>
 We suggest not to use any other npm package for it until it is not offically annouced as your api key might be stolen if you use some unknown package.
 
-## How To Clone this Project It
+## Setup
 First download the zip or clone it using ``git clone https://github.com/beCoditive/Becoditive-API.git``
 
 Then Download all the required node_modules using -
@@ -21,6 +21,11 @@ npm install
 ```
 
 Then rename `.env.example` to `.env` and edit it with your mongodb srv.
+
+To load Sample Data do - 
+```
+npm run loadsampledata
+```
 
 And to Run the API -
 ```
