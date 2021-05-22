@@ -3,5 +3,6 @@
 exports.domains = [
     'suckless.cc',
     '14kmail.me',
-    '0iq.in'
+    '0iq.in',
+    'aakash.co.in
 ]
