@@ -1,34 +1,22 @@
 const APIKEYS = require('../../models/apikeys')
 
 function uuid() {
-    var result1 = '';
-    var result2 = '';
-    var result3 = '';
-    var result4 = '';
-    var result5 = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    var charactersLength = characters.length;
+    const randomChoice = function(container) {
+        return Math.floor(Math.random() * container.length)
+    }
+    const randomCharacterFrom = function(length) {
+        return characters.charAt(randomChoice(characters))
+    }
 
-    for ( var i = 0; i < 8; i++ ) {
-        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
+    const makeKeyPart = function(length) {
+        return Array(length).fill().map(function() {
+            return randomCharacterFrom(length)
+        }).join('')
     }
-    for ( var i = 0; i < 4; i++ ) {
-        result2 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 4; i++ ) {
-        result3 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 4; i++ ) {
-        result4 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 12; i++ ) {
-        result5 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    
-    let final = `${result1}-${result2}-${result3}-${result4}-${result5}`
 
-    return final
+    return `${makeKeyPart(8)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(12)}`
 }
 
 
@@ -41,7 +29,7 @@ exports.newAPIKEY = async(req, res, next) => {
 
         let domain = email.split('@')[1]
 
-        if(blockedDomains.includes(`${domain}`)){
+        if(blockedDomains.includes(domain)){
             return res.render('main' , {message : "domain"})
         }
 
