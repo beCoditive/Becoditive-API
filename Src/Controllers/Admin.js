@@ -1,7 +1,7 @@
 const APIKEYS = require('../../models/apikeys')
 
 function uuid() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
     const randomChoice = function(container) {
         return Math.floor(Math.random() * container.length)
