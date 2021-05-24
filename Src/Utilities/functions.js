@@ -2,14 +2,14 @@ module.exports = {
     uuid : function(){     
             const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
         
-            const randomNumber = function(container) {
+            const randomNumber = function(container){
                 return Math.floor(Math.random() * container.length)
             }
-            const randomCharacter = function(length) {
+            const randomCharacter = function(length){
                 return characters.charAt(randomNumber(characters))
             }
         
-            const makeKeyPart = function(length) {
+            const makeKeyPart = function(length){
                 return Array(length).fill().map(function() {
                     return randomCharacter(length)
                 }).join('')
@@ -26,7 +26,7 @@ module.exports = {
             }
             return result;
     },
-    textToMorse : function(text) {
+    textToMorse : function(text){
         const morseCodeDictionary = {
             'a': '.-',
             'b': '-...',
@@ -80,38 +80,31 @@ module.exports = {
         
         const splittedText = text.toLowerCase().split(/(?!$)/)
         
-        return splittedText.map(function(code) {
+        return splittedText.map(function(code){
             return morseCodeDictionary[code];
         }).join(' ')
-
     },
-    sarcasticConverter : function(text) {
-        let output = ""
-        
-        for (var i = 0; i < text.length; i++) {
-            let char = text.charAt(i);
-    
-            let possibleOutcomes = ['low' , 'high'];
-    
-            let randomOutcomes = possibleOutcomes[Math.floor(Math.random() * possibleOutcomes.length)]
-    
-            if(randomOutcomes === 'low'){
-                char = char.toLowerCase()
-            }else if(randomOutcomes === 'high'){
-                char = char.toUpperCase()
-            }
-    
-            output += char
+    sarcasticConverter : function(text){
+        const possibleOutcomes = ['low', 'high']
+        const outcome = function() {
+            return possibleOutcomes[
+                Math.floor(Math.random() * possibleOutcomes.length)
+            ]
         }
-    
-        return output
+
+        return text.split('').map(function(letter) {
+            if (outcome() === 'low') {
+                return letter.toLowerCase()
+            }
+            return letter.toUpperCase()
+        }).join('')
     },
-    text2Binary : function(string) {
+    textToBinary : function(string){
         return string.split('').map(function (char) {
             return char.charCodeAt(0).toString(2);
         }).join(' ');
     },
-    reverseString : function(string) {
+    reverseString : function(string){
         return string.split('').reverse().join('')
     }
     

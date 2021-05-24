@@ -1,10 +1,5 @@
-let reverseString = require('../Utilities/functions').reverseString
-
-let text2Binary = require('../Utilities/functions').text2Binary
-
-let sarcasticConverter = require('../Utilities/functions').sarcasticConverter
-
-let textToMorse = require('../Utilities/functions').textToMorse
+let {reverseString, textToBinary, sarcasticConverter, textToMorse} =
+    require('../Utilities/functions')
 
 exports.shuffle = async(req, res, next) => {
     try{
@@ -74,7 +69,7 @@ exports.binary = async(req, res, next) => {
             return next();
         }
 
-        let binary = text2Binary(text)
+        let binary = textToBinary(text)
 
 
         res.status(200).json({
