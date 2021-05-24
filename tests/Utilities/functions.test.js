@@ -9,3 +9,8 @@ test('textToMorse', function(){
     expect(functions.textToMorse("hello world"))
     .toBe(".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
 })
+
+test('stringReverse', function() {
+    expect(functions.reverseString("hello world"))
+    .toBe("dlrow olleh")
+})

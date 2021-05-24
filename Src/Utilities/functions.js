@@ -26,7 +26,7 @@ module.exports = {
             }
             return result;
     },
-    textToMorse : function(text){
+    textToMorse : function(text) {
         const morseCodeDictionary = {
             'a': '.-',
             'b': '-...',
@@ -79,8 +79,8 @@ module.exports = {
         
         const splittedText = text.toLowerCase().split(/(?!$)/)
         
-        return splittedText.map(function(code){
-            return morseCodeDictionary[code]
+        return splittedText.map(function(code) {
+            return morseCodeDictionary[code];
         }).join(' ')
 
     },
@@ -110,12 +110,8 @@ module.exports = {
             return char.charCodeAt(0).toString(2);
         }).join(' ');
     },
-    reverseString : function(str) {
-        let newString = "";
-        for (let i = str.length - 1; i >= 0; i--) {
-            newString += str[i];
-        }
-        return newString;
+    reverseString : function(string) {
+        return string.split('').reverse().join('')
     }
     
 }
