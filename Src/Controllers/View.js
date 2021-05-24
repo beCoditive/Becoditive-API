@@ -20,3 +20,14 @@ exports.v2 = async(req, res, next) => {
         })
     }
 }
+
+exports.tos = async(req, res, next) => {
+    try{
+        res.status(200).render('termsofservice')
+        
+    }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}

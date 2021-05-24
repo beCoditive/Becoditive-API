@@ -1,20 +1,7 @@
 const apikeys = require('../../models/apikeys');
 const Url = require('../../models/url-shortner')
 
-function shortid() {
-    var result1 = '';
-
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
-    var charactersLength = characters.length;
-
-    for ( var i = 0; i < 8; i++ ) {
-        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-
-    let final = `${result1}`
-
-    return final
-}
+let shortid = require('../Utilities/functions').randomStr
 
 exports.create = async(req, res, next) => {
     try{
@@ -58,7 +45,7 @@ exports.create = async(req, res, next) => {
                 url,
                 logo,
                 description,
-                shortId : shortid(),
+                shortId : shortid(8),
                 owner : apikey.apikey,
                 domain : domain
             })

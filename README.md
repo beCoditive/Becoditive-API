@@ -7,6 +7,16 @@ We have a new system in our api which will block the use of some emails, domains
 Mostly the temp mail service will be blocked, but if someone else doesn't follow our T&S their email or domain can be banned.
 
 - [List of Blocked Domains](./blocked/blockeddomains.md) 
+- [List of Blocked Domain Extensions](./blocked/blockedExtensions.md)
+
+## Versions
+
+| beCoditive Versions | Status           | Support                     |
+|---------------------|------------------|-----------------------------|
+| v2.1.x              | In development   |          Code Only          |
+| v2.0.0              | Current          |     Both(API and Code)      |
+| v1.0.0              | Depreciated      | Code Only (Not Recommended) |
+
 
 ## Nodejs Module
 If you are using nodejs and want to use our api it will be more easier to use it by your [NPM Package](https://www.npmjs.com/package/becoditive).<br>
@@ -39,6 +49,14 @@ This Project already has a .replit file configured!
 
 you can change all the files and use it for your projects also.
 But you have to give credits to `beCoditive`.
+
+## Contributors 
+<br><br>
+<a href="https://github.com/beCoditive/beCoditive-API/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=beCoditive/beCoditive-API"/>
+</a>
+<br><br>
+
 
 > Made By beCoditive ©2021
 

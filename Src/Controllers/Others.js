@@ -4,47 +4,12 @@ const Jokes = require('../../models/jokes')
 const Insults = require('../../models/insults')
 const Flirts = require('../../models/flirt')
 const Uselessweb = require('../../models/Uselessweb')
+const stories = require('../../models/letsnotmeet')
+const truthAndDare = require('../../models/truthordare')
 
-function randomStr(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-}
+let randomStr = require('../Utilities/functions').randomStr
 
-function uuid() {
-    var result1 = '';
-    var result2 = '';
-    var result3 = '';
-    var result4 = '';
-    var result5 = '';
-
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    var charactersLength = characters.length;
-
-    for ( var i = 0; i < 8; i++ ) {
-        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 4; i++ ) {
-        result2 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 4; i++ ) {
-        result3 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 4; i++ ) {
-        result4 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    for ( var i = 0; i < 12; i++ ) {
-        result5 += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    
-    let final = `${result1}-${result2}-${result3}-${result4}-${result5}`
-
-    return final
-}
+let uuid = require('../Utilities/functions').uuid
 
 exports.joke = async(req, res, next) => {
     try{
@@ -53,6 +18,23 @@ exports.joke = async(req, res, next) => {
         res.status(200).json({
             joke : randomData.joke,
             category: randomData.category
+        })
+    }catch(error){
+        res.status(500).json({
+            "error": error
+        })
+    }
+}
+
+exports.letsnotmeet = async(req, res, next) => {
+    try{
+        let data = await stories.find()
+        let randomData = data[Math.floor(Math.random() * data.length)]
+        res.status(200).json({
+            title : randomData.title,
+            story: randomData.story,
+            author : randomData.author,
+            url : randomData.url
         })
     }catch(error){
         res.status(500).json({
@@ -283,10 +265,10 @@ exports.doesnotexists = async(req, res, next) => {
 
 exports.truth = async(req, res, next) => {
     try{
-        const data = require('../Data/Truth.json')
+        const data = await truthAndDare.find({category : "truth"})
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
-            truth : randomData.truth,   
+            truth : randomData.question,   
         })
     }catch(error){
         res.status(500).json({
@@ -297,10 +279,10 @@ exports.truth = async(req, res, next) => {
 
 exports.dare = async(req, res, next) => {
     try{
-        const data = require('../Data/Dare.json')
+        const data = await truthAndDare.find({category : "dare"})
         let randomData = data[Math.floor(Math.random() * data.length)]
         res.status(200).json({
-            dare : randomData.dare,   
+            dare : randomData.question,   
         })
     }catch(error){
         res.status(500).json({

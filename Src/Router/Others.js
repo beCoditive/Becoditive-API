@@ -1,6 +1,6 @@
 const express = require('express')
 const route = express.Router()
-const auth = require('../Controllers/auth').auth
+const auth = require('../Utilities/auth').auth
 
 const otherController = require('../Controllers/Others')
 
@@ -36,6 +36,10 @@ route
 route
     .route('/uselessweb')
     .get(auth , otherController.uselessweb)
+
+route
+    .route('/letsnotmeet')
+    .get(auth , otherController.letsnotmeet)
 
 route
     .route('/truth')

@@ -1,24 +1,6 @@
 const APIKEYS = require('../../models/apikeys')
 
-function uuid() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-
-    const randomChoice = function(container) {
-        return Math.floor(Math.random() * container.length)
-    }
-    const randomCharacterFrom = function(length) {
-        return characters.charAt(randomChoice(characters))
-    }
-
-    const makeKeyPart = function(length) {
-        return Array(length).fill().map(function() {
-            return randomCharacterFrom(length)
-        }).join('')
-    }
-
-    return `${makeKeyPart(8)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(12)}`
-}
-
+const uuid = require('../Utilities/functions').uuid
 
 exports.newAPIKEY = async(req, res, next) => {
     try{

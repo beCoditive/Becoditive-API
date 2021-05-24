@@ -1,5 +1,5 @@
 const Animals = require('../../models/animals')
-const Auth = require('./auth')
+
 
 exports.cat = async(req, res, next) => {
     try{
