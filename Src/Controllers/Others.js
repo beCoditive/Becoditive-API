@@ -7,9 +7,7 @@ const Uselessweb = require('../../models/Uselessweb')
 const stories = require('../../models/letsnotmeet')
 const truthAndDare = require('../../models/truthordare')
 
-let randomStr = require('../Utilities/functions').randomStr
-
-let uuid = require('../Utilities/functions').uuid
+const {randomStr, uuid} = require('../Utilities/functions')
 
 exports.joke = async(req, res, next) => {
     try{
