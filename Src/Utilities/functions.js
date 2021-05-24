@@ -2,16 +2,16 @@ module.exports = {
     uuid : function(){     
             const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
         
-            const randomChoice = function(container) {
+            const randomNumber = function(container) {
                 return Math.floor(Math.random() * container.length)
             }
-            const randomCharacterFrom = function(length) {
-                return characters.charAt(randomChoice(characters))
+            const randomCharacter = function(length) {
+                return characters.charAt(randomNumber(characters))
             }
         
             const makeKeyPart = function(length) {
                 return Array(length).fill().map(function() {
-                    return randomCharacterFrom(length)
+                    return randomCharacter(length)
                 }).join('')
             }
         
