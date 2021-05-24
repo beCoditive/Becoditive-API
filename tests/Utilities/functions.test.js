@@ -5,12 +5,17 @@ test('uuid', function(){
     .toMatch(/^[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}$/)
 })
 
-test('textToMorse', function(){
-    expect(functions.textToMorse("hello world"))
+test('textToMorse1', function(){
+    expect(functions.textToMorse('hello world'))
     .toBe(".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
 })
 
+test('textToMorse2', function(){
+    expect(functions.textToMorse('abcdefhijklmnopqrstuvwxyz0123456789.,:?\'-/)("@= '))
+    .toBe('.- -... -.-. -.. . ..-. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .--  -.-- --.. ----- .---- ..--- ...-- ....- ..... -.... --... ---.. ----. .-.-.- --..-- ---... ..--.. .----. -....- -..-. -.--.- -.--. .-..-. .--.-. -...- /')
+})
+
 test('stringReverse', function() {
-    expect(functions.reverseString("hello world"))
-    .toBe("dlrow olleh")
+    expect(functions.reverseString('hello world'))
+    .toBe('dlrow olleh')
 })
