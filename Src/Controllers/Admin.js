@@ -1,6 +1,5 @@
 const APIKEYS = require('../../models/apikeys')
-
-const uuid = require('../Utilities/functions').uuid
+const { uuid } = require('../Utilities/functions')
 
 exports.newAPIKEY = async (req, res, next) => {
   try {

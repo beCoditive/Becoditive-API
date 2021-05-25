@@ -1,33 +1,34 @@
+const randomNumber = function (length) {
+  return Math.floor(Math.random() * length)
+}
+const randomChoice = function (list) {
+  return list[randomNumber(list.length)]
+}
+const randomCharacter = function (string) {
+  return string.charAt(randomNumber(string.length))
+}
+const randomString = function (length, from = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') {
+  return Array(length).fill().map(function () {
+    return randomCharacter(from)
+  }).join('')
+}
+
 module.exports = {
+  randomNumber,
+  randomChoice,
+  randomCharacter,
+  randomString,
   uuid: function () {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    const fromString = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
-    const randomNumber = function (container) {
-      return Math.floor(Math.random() * container.length)
-    }
-    const randomCharacter = function (length) {
-      return characters.charAt(randomNumber(characters))
+    const makeUUIDPart = function (length) {
+      return randomString(length, fromString)
     }
 
-    const makeKeyPart = function (length) {
-      return Array(length).fill().map(function () {
-        return randomCharacter(length)
-      }).join('')
-    }
-
-    return `${makeKeyPart(8)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(4)}-${makeKeyPart(12)}`
-  },
-  randomStr: function (length) {
-    let result = ''
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    const charactersLength = characters.length
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength))
-    }
-    return result
+    return `${makeUUIDPart(8)}-${makeUUIDPart(4)}-${makeUUIDPart(4)}-${makeUUIDPart(4)}-${makeUUIDPart(12)}`
   },
   textToMorse: function (text) {
-    const morseCodeDictionary = {
+    const morseCode = {
       a: '.-',
       b: '-...',
       c: '-.-.',
@@ -78,30 +79,28 @@ module.exports = {
       ' ': '/'
     }
 
-    const splittedText = text.toLowerCase().split(/(?!$)/)
+    const splitted = text.toLowerCase().split(/(?!$)/)
 
-    return splittedText.map(function (char) {
-      return morseCodeDictionary[char]
+    return splitted.map(function (character) {
+      return morseCode[character]
     }).join(' ')
   },
-  sarcasticConverter: function (text) {
+  sarcasticConverter: function (string) {
     const possibleOutcomes = ['low', 'high']
     const outcome = function () {
-      return possibleOutcomes[
-        Math.floor(Math.random() * possibleOutcomes.length)
-      ]
+      return randomChoice(possibleOutcomes)
     }
 
-    return text.split('').map(function (char) {
+    return string.split('').map(function (character) {
       if (outcome() === 'low') {
-        return char.toLowerCase()
+        return character.toLowerCase()
       }
-      return char.toUpperCase()
+      return character.toUpperCase()
     }).join('')
   },
   textToBinary: function (string) {
-    return string.split('').map(function (char) {
-      return char.charCodeAt(0).toString(2)
+    return string.split('').map(function (character) {
+      return character.charCodeAt(0).toString(2)
     }).join(' ')
   },
   reverseString: function (string) {

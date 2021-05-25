@@ -7,7 +7,7 @@ const Uselessweb = require('../../models/Uselessweb')
 const stories = require('../../models/letsnotmeet')
 const truthAndDare = require('../../models/truthordare')
 
-const { randomStr, uuid } = require('../Utilities/functions')
+const { randomString, uuid } = require('../Utilities/functions')
 
 exports.joke = async (req, res, next) => {
   try {
@@ -145,7 +145,7 @@ exports.password = async (req, res, next) => {
       })
       return next()
     } else {
-      const password = randomStr(req.query.length)
+      const password = randomString(req.query.length)
       res.status(200).json({
         password: password,
         length: req.query.length,

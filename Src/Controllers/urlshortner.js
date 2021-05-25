@@ -1,7 +1,7 @@
 const apikeys = require('../../models/apikeys')
 const Url = require('../../models/url-shortner')
 
-const shortid = require('../Utilities/functions').randomStr
+const shortid = require('../Utilities/functions').randomString
 
 exports.create = async (req, res, next) => {
   try {
