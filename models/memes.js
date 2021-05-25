@@ -1,19 +1,19 @@
 const mongoose = require('mongoose')
 
 const memeSchema = mongoose.Schema({
-    meme : {
-        type : String,
-        required : true,
-        unique : true
-    },
-    category : {
-        type : String,
-        required : true
-    }
+  meme: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  category: {
+    type: String,
+    required: true
+  }
 },
 {
-    versionKey: false
+  versionKey: false
 }
 )
 
-module.exports = mongoose.model('memes', memeSchema);
+module.exports = mongoose.model('memes', memeSchema)

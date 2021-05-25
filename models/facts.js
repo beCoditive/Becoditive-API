@@ -1,19 +1,19 @@
 const mongoose = require('mongoose')
 
 const factSchema = mongoose.Schema({
-    fact : {
-        type : String,
-        required : true,
-        unique : true
-    },
-    category : {
-        type : String,
-        required : true
-    }
+  fact: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  category: {
+    type: String,
+    required: true
+  }
 },
 {
-    versionKey: false
+  versionKey: false
 }
 )
 
-module.exports = mongoose.model('facts', factSchema);
+module.exports = mongoose.model('facts', factSchema)

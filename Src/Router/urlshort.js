@@ -5,15 +5,15 @@ const auth = require('../Utilities/auth').auth
 const urlController = require('../Controllers/urlshortner')
 
 route
-    .route('/create')
-    .post(auth , urlController.create)
+  .route('/create')
+  .post(auth, urlController.create)
 
 route
-    .route('/update')
-    .patch(auth , urlController.update)
+  .route('/update')
+  .patch(auth, urlController.update)
 
 route
-    .route('/info')
-    .get(auth , urlController.info)
+  .route('/info')
+  .get(auth, urlController.info)
 
-module.exports = route;
+module.exports = route

@@ -5,7 +5,7 @@ const auth = require('../Utilities/auth').auth
 const fakeController = require('../Controllers/fake')
 
 route
-    .route('/creditcards')
-    .get(auth , fakeController.credit)
+  .route('/creditcards')
+  .get(auth, fakeController.credit)
 
-module.exports = route;
+module.exports = route

@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 
 const insultsSchema = mongoose.Schema({
-    insult : {
-        type : String,
-        required : true,
-        unique : true
-    },
+  insult: {
+    type: String,
+    required: true,
+    unique: true
+  }
 },
 {
-    versionKey: false
+  versionKey: false
 }
 )
 
-module.exports = mongoose.model('insults', insultsSchema);
+module.exports = mongoose.model('insults', insultsSchema)
