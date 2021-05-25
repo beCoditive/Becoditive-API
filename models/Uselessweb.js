@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 
 const uselesswebSchema = mongoose.Schema({
-    link : {
-        type : String,
-        required : true,
-        unique : true
-    },
+  link: {
+    type: String,
+    required: true,
+    unique: true
+  }
 },
 {
-    versionKey: false
+  versionKey: false
 }
 )
 
-module.exports = mongoose.model('Useless Websites', uselesswebSchema);
+module.exports = mongoose.model('Useless Websites', uselesswebSchema)

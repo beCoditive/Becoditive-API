@@ -5,68 +5,67 @@ const auth = require('../Utilities/auth').auth
 const otherController = require('../Controllers/Others')
 
 route
-    .route('/joke')
-    .get(auth , otherController.joke)
+  .route('/joke')
+  .get(auth, otherController.joke)
 
 route
-    .route('/puns')
-    .get(auth, otherController.puns)
-
-
-route
-    .route('/insults')
-    .get(auth , otherController.insults)
+  .route('/puns')
+  .get(auth, otherController.puns)
 
 route
-    .route('/flirt')
-    .get(auth , otherController.flirt)
+  .route('/insults')
+  .get(auth, otherController.insults)
 
 route
-    .route('/word')
-    .get(auth , otherController.word)
+  .route('/flirt')
+  .get(auth, otherController.flirt)
 
 route
-    .route('/doesnotexists')
-    .get(auth , otherController.doesnotexists)
+  .route('/word')
+  .get(auth, otherController.word)
 
 route
-    .route('/quote')
-    .get(auth , otherController.quotes)
+  .route('/doesnotexists')
+  .get(auth, otherController.doesnotexists)
 
 route
-    .route('/uselessweb')
-    .get(auth , otherController.uselessweb)
+  .route('/quote')
+  .get(auth, otherController.quotes)
 
 route
-    .route('/letsnotmeet')
-    .get(auth , otherController.letsnotmeet)
+  .route('/uselessweb')
+  .get(auth, otherController.uselessweb)
 
 route
-    .route('/truth')
-    .get(auth , otherController.truth)
+  .route('/letsnotmeet')
+  .get(auth, otherController.letsnotmeet)
 
 route
-    .route('/dare')
-    .get(auth , otherController.dare)    
+  .route('/truth')
+  .get(auth, otherController.truth)
 
 route
-    .route('/number')
-    .get(auth , otherController.number)
+  .route('/dare')
+  .get(auth, otherController.dare)
 
 route
-    .route('/uuid')
-    .get(auth , otherController.uuid)
+  .route('/number')
+  .get(auth, otherController.number)
 
 route
-    .route('/password')
-    .get(auth , otherController.password)
+  .route('/uuid')
+  .get(auth, otherController.uuid)
 
 route
-    .route('/hug')
-    .get(auth , otherController.hug)
+  .route('/password')
+  .get(auth, otherController.password)
 
 route
-    .route('/kiss')
-    .get(auth , otherController.kiss)
+  .route('/hug')
+  .get(auth, otherController.hug)
 
-module.exports = route;
+route
+  .route('/kiss')
+  .get(auth, otherController.kiss)
+
+module.exports = route

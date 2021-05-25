@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon ./server.js",
     "loadsampledata": "node ./loadsampledata.js",
-    "test": "jest"
+    "test": "jest",
+    "format": "standard --fix",
+    "testAndFormat": "jest && standard --fix"
   },
   "author": "beCoditive",
   "license": "MIT",
@@ -23,7 +25,6 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
     "gifencoder": "^2.0.1",
-    "jest": "^26.6.3",
     "jimp": "^0.16.1",
     "mongoose": "^5.12.7",
     "morgan": "^1.10.0",
@@ -33,6 +34,8 @@
     "webshot-node": "^0.18.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
   }
 }

@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 
 const flirtSchema = mongoose.Schema({
-    flirt : {
-        type : String,
-        required : true,
-        unique : true
-    },
+  flirt: {
+    type: String,
+    required: true,
+    unique: true
+  }
 },
 {
-    versionKey: false
+  versionKey: false
 }
 )
 
-module.exports = mongoose.model('flirts', flirtSchema);
+module.exports = mongoose.model('flirts', flirtSchema)
