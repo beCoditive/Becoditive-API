@@ -1,4 +1,4 @@
-const functions = require('../../Src/Utilities/functions')
+const functions = require('../../../Src/Utilities/functions')
 
 test('uuid', function () {
   expect(functions.uuid())
