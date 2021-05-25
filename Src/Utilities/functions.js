@@ -1,10 +1,12 @@
 const randomNumber = function (length) {
   return Math.floor(Math.random() * length)
 }
+const randomChoice = function (list) {
+  return list[randomNumber(list.length)]
+}
 const randomCharacter = function (string) {
   return string.charAt(randomNumber(string.length))
 }
-
 const randomString = function (length, from = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') {
   return Array(length).fill().map(function () {
     return randomCharacter(from)
@@ -13,6 +15,7 @@ const randomString = function (length, from = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefg
 
 module.exports = {
   randomNumber,
+  randomChoice,
   randomCharacter,
   randomString,
   uuid: function () {
@@ -85,9 +88,7 @@ module.exports = {
   sarcasticConverter: function (string) {
     const possibleOutcomes = ['low', 'high']
     const outcome = function () {
-      return possibleOutcomes[
-        randomNumber(possibleOutcomes.length)
-      ]
+      return randomChoice(possibleOutcomes)
     }
 
     return string.split('').map(function (character) {

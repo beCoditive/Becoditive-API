@@ -5,6 +5,10 @@ describe('Utility functions', function () {
     expect(functions.randomNumber(11))
       .toBeLessThan(11)
   })
+  it('returns a random object from a list', function () {
+    expect(functions.randomChoice(['high', 'low', 'medium']))
+      .toMatch(/^high|low|medium$/)
+  })
   it('returns a random character from a string', function () {
     expect(functions.randomCharacter('ABCDE'))
       .toMatch(/^[A-E]$/)
