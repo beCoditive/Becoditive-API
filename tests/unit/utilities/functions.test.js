@@ -3,7 +3,7 @@ const functions = require('../../../Src/Utilities/functions')
 describe('Utility functions', function () {
   it('returns a random number from a sequence', function () {
     expect(functions.randomNumber(11))
-      .toBeLessThan(10)
+      .toBeLessThan(11)
   })
   it('returns a random character from a string', function () {
     expect(functions.randomCharacter('ABCDE'))

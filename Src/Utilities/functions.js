@@ -78,11 +78,11 @@ module.exports = {
 
     const splitted = text.toLowerCase().split(/(?!$)/)
 
-    return splitted.map(function (char) {
-      return morseCode[char]
+    return splitted.map(function (character) {
+      return morseCode[character]
     }).join(' ')
   },
-  sarcasticConverter: function (text) {
+  sarcasticConverter: function (string) {
     const possibleOutcomes = ['low', 'high']
     const outcome = function () {
       return possibleOutcomes[
@@ -90,16 +90,16 @@ module.exports = {
       ]
     }
 
-    return text.split('').map(function (char) {
+    return string.split('').map(function (character) {
       if (outcome() === 'low') {
-        return char.toLowerCase()
+        return character.toLowerCase()
       }
-      return char.toUpperCase()
+      return character.toUpperCase()
     }).join('')
   },
   textToBinary: function (string) {
-    return string.split('').map(function (char) {
-      return char.charCodeAt(0).toString(2)
+    return string.split('').map(function (character) {
+      return character.charCodeAt(0).toString(2)
     }).join(' ')
   },
   reverseString: function (string) {
