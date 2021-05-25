@@ -9,6 +9,14 @@ describe('Utility functions', function () {
     expect(functions.randomCharacter('ABCDE'))
       .toMatch(/^[A-E]$/)
   })
+  it('returns a random crafted string from another whole string', function() {
+    expect(functions.randomString(10))
+      .toMatch(/^[A-Za-z0-9]{10}$/)
+  })
+  it('returns a random crafted string from another whole string', function() {
+    expect(functions.randomString(3, 'ABCDEFGHJIJKWEIWIEIOWIEIOWIOEIOWE'))
+      .toMatch(/^[A-Z]{3}$/)
+  })
   it('makes uuid', function () {
     expect(functions.uuid())
       .toMatch(/^[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}$/)
