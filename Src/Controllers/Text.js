@@ -1,5 +1,9 @@
-const { reverseString, textToBinary, sarcasticConverter, textToMorse } =
-    require('../Utilities/functions')
+const {
+  reverseString,
+  textToBinary,
+  sarcasticConverter,
+  textToMorse
+} = require('../Utilities/functions')
 
 exports.shuffle = async (req, res, next) => {
   try {
@@ -14,7 +18,12 @@ exports.shuffle = async (req, res, next) => {
       return next()
     }
 
-    const shuffledWord = text.split(/\s\b(?!\s)/).sort(function () { return 0.5 - Math.random() }).join(' ')
+    const shuffledWord =
+      text
+        .split(/\s\b(?!\s)/)
+        .sort(function () {
+          return 0.5 - Math.random()
+        }).join(' ')
 
     res.status(200).json({
       'shuffled Word': shuffledWord
