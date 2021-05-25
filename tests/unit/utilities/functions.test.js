@@ -9,11 +9,11 @@ describe('Utility functions', function () {
     expect(functions.randomCharacter('ABCDE'))
       .toMatch(/^[A-E]$/)
   })
-  it('returns a random crafted string from another whole string', function() {
+  it('returns a random crafted string from another whole string', function () {
     expect(functions.randomString(10))
       .toMatch(/^[A-Za-z0-9]{10}$/)
   })
-  it('returns a random crafted string from another whole string', function() {
+  it('returns a random crafted string from another whole string', function () {
     expect(functions.randomString(3, 'ABCDEFGHJIJKWEIWIEIOWIEIOWIOEIOWE'))
       .toMatch(/^[A-Z]{3}$/)
   })
@@ -46,4 +46,3 @@ describe('Utility functions', function () {
       .toBe('dlrow olleh')
   })
 })
-

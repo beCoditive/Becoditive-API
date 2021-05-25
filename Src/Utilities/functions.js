@@ -5,7 +5,7 @@ const randomCharacter = function (string) {
   return string.charAt(randomNumber(string.length))
 }
 
-const randomString = function (length, from ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') {
+const randomString = function (length, from = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') {
   return Array(length).fill().map(function () {
     return randomCharacter(from)
   }).join('')
@@ -86,7 +86,7 @@ module.exports = {
     const possibleOutcomes = ['low', 'high']
     const outcome = function () {
       return possibleOutcomes[
-        Math.floor(Math.random() * possibleOutcomes.length)
+        randomNumber(possibleOutcomes.length)
       ]
     }
 
