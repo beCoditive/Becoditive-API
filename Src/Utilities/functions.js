@@ -1,17 +1,19 @@
-module.exports = {
-  uuid: function () {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+const randomNumber = function (length) {
+  return Math.floor(Math.random() * length)
+}
+const randomCharacter = function (string) {
+  return string.charAt(randomNumber(string.length))
+}
 
-    const randomNumber = function (container) {
-      return Math.floor(Math.random() * container.length)
-    }
-    const randomCharacter = function (length) {
-      return characters.charAt(randomNumber(characters))
-    }
+module.exports = {
+  randomNumber,
+  randomCharacter,
+  uuid: function () {
+    const fromString = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
     const makeKeyPart = function (length) {
       return Array(length).fill().map(function () {
-        return randomCharacter(length)
+        return randomCharacter(fromString)
       }).join('')
     }
 
