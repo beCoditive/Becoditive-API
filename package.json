@@ -26,7 +26,7 @@
     "express-rate-limit": "^5.2.6",
     "gifencoder": "^2.0.1",
     "jimp": "^0.16.1",
-    "mongoose": "^5.12.7",
+    "mongoose": "^5.13.15",
     "morgan": "^1.10.0",
     "nodemailer": "^6.6.0",
     "nodemailer-sendinblue-transport": "^1.2.3",
